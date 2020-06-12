@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.4</version>
-    <date>2018-06-07T13:18:28Z</date>
+    <date>2020-06-07T13:18:28Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -11,8 +11,7 @@
         <template>
             <template>Template--APP--VMware--Hypervisor</template>
             <name>Template--APP--VMware--Hypervisor</name>
-            <description>Created by Lucas Afonso Kremer&#13;
-https://linkedin.com/in/lucasafonsokremer</description>
+            <description>Created by Mickael ASSELINE (PAPAMICA) &lt;asselinemickael@gmail.com</description>
             <groups>
                 <group>
                     <name>Templates</name>
