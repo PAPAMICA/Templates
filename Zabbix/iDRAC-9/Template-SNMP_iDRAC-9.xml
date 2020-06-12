@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.4</version>
-    <date>2018-10-19T19:03:22Z</date>
+    <date>2020-02-19T19:03:22Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -11,8 +11,7 @@
         <template>
             <template>Template-SNMP-iDRAC-9</template>
             <name>Template-SNMP-iDRAC-9</name>
-            <description>Lucas Afonso Kremer&#13;
-https://www.linkedin.com/in/lucasafonsokremer</description>
+            <description>Created by Mickael ASSELINE (PAPAMICA) &lt;asselinemickael@gmail.com</description>
             <groups>
                 <group>
                     <name>Templates</name>
