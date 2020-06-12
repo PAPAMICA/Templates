@@ -11,7 +11,7 @@
         <template>
             <template>Template Synology DiskStation</template>
             <name>Template Synology DiskStation</name>
-            <description/>
+            <description>Created by Mickael ASSELINE (PAPAMICA) &lt;asselinemickael@gmail.com</description>
             <groups>
                 <group>
                     <name>Templates</name>
