@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.4</version>
-    <date>2018-02-15T15:54:35Z</date>
+    <date>2020-02-15T15:54:35Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -11,8 +11,7 @@
         <template>
             <template>Template App Zabbix Agent -- ACTIVE</template>
             <name>Template App Zabbix Agent -- ACTIVE</name>
-            <description>Criado por Lucas Afonso Kremer &lt;lucasafonsokremer@gmail.com&gt;&#13;
-https://www.linkedin.com/in/lucasafonsokremer</description>
+            <description>Created by Mickael ASSELINE (PAPAMICA) &lt;asselinemickael@gmail.com</description>
             <groups>
                 <group>
                     <name>Templates</name>
