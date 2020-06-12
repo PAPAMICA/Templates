@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2017-06-26T20:01:31Z</date>
+    <date>2020-02-26T20:01:31Z</date>
     <value_maps>
         <value_map>
             <name>DellDracDiskState</name>
