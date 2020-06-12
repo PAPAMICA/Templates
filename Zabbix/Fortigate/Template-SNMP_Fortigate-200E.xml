@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.4</version>
-    <date>2018-08-02T16:46:03Z</date>
+    <date>2020-02-02T16:46:03Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -11,7 +11,7 @@
         <template>
             <template>Template--SNMP--Fortigate-200E</template>
             <name>Template--SNMP--Fortigate-200E</name>
-            <description>Tested on Fortigate 200E</description>
+            <description>Created by Mickael ASSELINE (PAPAMICA) &lt;asselinemickael@gmail.com</description>
             <groups>
                 <group>
                     <name>Templates</name>
