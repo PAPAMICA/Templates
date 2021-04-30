@@ -1,0 +1,5088 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": "-- Grafana --",
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "gnetId": null,
+    "graphTooltip": 0,
+    "id": 8,
+    "links": [],
+    "panels": [
+      {
+        "bgColor": null,
+        "clockType": "24 hour",
+        "countdownSettings": {
+          "customFormat": null,
+          "endCountdownTime": "2020-08-04T11:53:00.000Z",
+          "endText": "00:00:00"
+        },
+        "datasource": null,
+        "dateSettings": {
+          "dateFormat": "DD-MM-YYYY",
+          "fontSize": "20px",
+          "fontWeight": "normal",
+          "showDate": true
+        },
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 6,
+          "x": 0,
+          "y": 0
+        },
+        "id": 2,
+        "mode": "time",
+        "options": {
+          "bgColor": "",
+          "clockType": "24 hour",
+          "countdownSettings": {
+            "endCountdownTime": "2020-09-02T17:50:08+02:00",
+            "endText": "00:00:00"
+          },
+          "dateSettings": {
+            "dateFormat": "DD-MM-YYYY",
+            "fontSize": "20px",
+            "fontWeight": "normal",
+            "showDate": true
+          },
+          "mode": "time",
+          "timeSettings": {
+            "fontSize": "50px",
+            "fontWeight": "bold"
+          },
+          "timezone": "",
+          "timezoneSettings": {
+            "fontSize": "12px",
+            "fontWeight": "normal",
+            "showTimezone": false,
+            "zoneFormat": "offsetAbbv"
+          }
+        },
+        "refreshSettings": {
+          "syncWithDashboard": false
+        },
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "functions": [],
+            "group": {
+              "filter": ""
+            },
+            "host": {
+              "filter": ""
+            },
+            "item": {
+              "filter": ""
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeSettings": {
+          "customFormat": "HH:mm:ss",
+          "fontSize": "60px",
+          "fontWeight": "normal"
+        },
+        "timeShift": null,
+        "timezone": null,
+        "timezoneSettings": {
+          "fontSize": "12px",
+          "fontWeight": "normal",
+          "showTimezone": false,
+          "zoneFormat": "offsetAbbv"
+        },
+        "title": "",
+        "transparent": true,
+        "type": "grafana-clock-panel"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 35
+                }
+              ]
+            },
+            "unit": "celsius"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 6,
+          "y": 0
+        },
+        "id": 11,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Temperature"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - ILO - NAS 2"
+            },
+            "item": {
+              "filter": "Ambient: Temperature"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "Température Baie",
+        "type": "stat"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "yellow",
+                  "value": 330
+                },
+                {
+                  "color": "orange",
+                  "value": 350
+                },
+                {
+                  "color": "red",
+                  "value": 400
+                }
+              ]
+            },
+            "unit": "watt"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 9,
+          "y": 0
+        },
+        "id": 21,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Consommation"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - STATION BAIE"
+            },
+            "item": {
+              "filter": "Watt"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "Consommation actuelle",
+        "type": "stat"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "yellow",
+                  "value": 6
+                },
+                {
+                  "color": "orange",
+                  "value": 7
+                },
+                {
+                  "color": "red",
+                  "value": 8
+                }
+              ]
+            },
+            "unit": "kwatth"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 12,
+          "y": 0
+        },
+        "id": 22,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Consommation"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - STATION BAIE"
+            },
+            "item": {
+              "filter": "Consommation journée"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "Consommation journée",
+        "type": "stat"
+      },
+      {
+        "datasource": null,
+        "description": "",
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "displayName": "",
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": null
+                },
+                {
+                  "color": "#EAB839",
+                  "value": 300
+                },
+                {
+                  "color": "green",
+                  "value": 800
+                }
+              ]
+            },
+            "unit": "Mbits"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 15,
+          "y": 0
+        },
+        "id": 7,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "mean"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Speed Test"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - STATION BAIE"
+            },
+            "item": {
+              "filter": "download"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "Download",
+        "type": "stat"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": null
+                },
+                {
+                  "color": "#EAB839",
+                  "value": 300
+                },
+                {
+                  "color": "green",
+                  "value": 500
+                }
+              ]
+            },
+            "unit": "Mbits"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 18,
+          "y": 0
+        },
+        "id": 8,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "mean"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Speed Test"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - STATION BAIE"
+            },
+            "item": {
+              "filter": "upload"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "Upload",
+        "type": "stat"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "#EAB839",
+                  "value": 15
+                },
+                {
+                  "color": "red",
+                  "value": 60
+                }
+              ]
+            },
+            "unit": "ms"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 21,
+          "y": 0
+        },
+        "id": 9,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "mean"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Speed Test"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - STATION BAIE"
+            },
+            "item": {
+              "filter": "Ping"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "Ping",
+        "type": "stat"
+      },
+      {
+        "ackEventColor": "rgb(56, 219, 156)",
+        "ackField": false,
+        "ageField": true,
+        "customLastChangeFormat": false,
+        "datasource": null,
+        "descriptionAtNewLine": true,
+        "descriptionField": false,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "fontSize": "100%",
+        "gridPos": {
+          "h": 6,
+          "w": 9,
+          "x": 0,
+          "y": 4
+        },
+        "highlightBackground": false,
+        "highlightNewEvents": true,
+        "highlightNewerThan": "1h",
+        "hostField": true,
+        "hostGroups": false,
+        "hostProxy": false,
+        "hostTechNameField": false,
+        "id": 24,
+        "lastChangeFormat": "",
+        "layout": "list",
+        "limit": null,
+        "markAckEvents": true,
+        "okEventColor": "rgb(56, 189, 113)",
+        "pageSize": 5,
+        "problemTimeline": true,
+        "resizedColumns": [],
+        "schemaVersion": 8,
+        "severityField": true,
+        "showTags": false,
+        "sortProblems": "priority",
+        "statusField": false,
+        "statusIcon": true,
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "/.*/"
+            },
+            "item": {
+              "filter": ""
+            },
+            "options": {
+              "acknowledged": 2,
+              "hostProxy": false,
+              "hostsInMaintenance": false,
+              "limit": 1001,
+              "minSeverity": 3,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "sortProblems": "default"
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 5,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "showProblems": "problems",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "ALERTES",
+        "triggerSeverity": [
+          {
+            "color": "rgb(108, 108, 108)",
+            "priority": 0,
+            "severity": "Not classified",
+            "show": true
+          },
+          {
+            "color": "rgb(120, 158, 183)",
+            "priority": 1,
+            "severity": "Information",
+            "show": true
+          },
+          {
+            "color": "rgb(175, 180, 36)",
+            "priority": 2,
+            "severity": "Warning",
+            "show": true
+          },
+          {
+            "color": "rgb(255, 137, 30)",
+            "priority": 3,
+            "severity": "Average",
+            "show": true
+          },
+          {
+            "color": "rgb(255, 101, 72)",
+            "priority": 4,
+            "severity": "High",
+            "show": true
+          },
+          {
+            "color": "rgb(215, 0, 0)",
+            "priority": 5,
+            "severity": "Disaster",
+            "show": true
+          }
+        ],
+        "type": "alexanderzobnin-zabbix-triggers-panel"
+      },
+      {
+        "aliasColors": {},
+        "bars": false,
+        "dashLength": 10,
+        "dashes": false,
+        "datasource": "InfluxDB",
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "links": []
+          },
+          "overrides": []
+        },
+        "fill": 2,
+        "fillGradient": 0,
+        "gridPos": {
+          "h": 6,
+          "w": 7,
+          "x": 9,
+          "y": 4
+        },
+        "hiddenSeries": false,
+        "id": 4,
+        "legend": {
+          "alignAsTable": true,
+          "avg": true,
+          "current": true,
+          "max": false,
+          "min": true,
+          "show": false,
+          "total": false,
+          "values": true
+        },
+        "lines": true,
+        "linewidth": 2,
+        "nullPointMode": "connected",
+        "percentage": false,
+        "pluginVersion": "7.1.3",
+        "pointradius": 2,
+        "points": false,
+        "renderer": "flot",
+        "seriesOverrides": [],
+        "spaceLength": 10,
+        "stack": false,
+        "steppedLine": false,
+        "targets": [
+          {
+            "groupBy": [
+              {
+                "params": [
+                  "$__interval"
+                ],
+                "type": "time"
+              },
+              {
+                "params": [
+                  "null"
+                ],
+                "type": "fill"
+              }
+            ],
+            "orderByTime": "ASC",
+            "policy": "default",
+            "query": "SELECT non_negative_derivative(sum(\"rx_bytes\"), 1s) AS \"Rx\", non_negative_derivative(sum(\"tx_bytes\"), 1s) AS \"Tx\" FROM \"usg_wan_ports\" WHERE (\"device_name\" =~ /^UDM-Pro$/ AND \"site_name\" =~ /^(Default \\(default\\)|Maison \\(default\\))$/) AND $timeFilter GROUP BY time($__interval), \"purpose\"",
+            "rawQuery": true,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "select": [
+              [
+                {
+                  "params": [
+                    "value"
+                  ],
+                  "type": "field"
+                },
+                {
+                  "params": [],
+                  "type": "mean"
+                }
+              ]
+            ],
+            "tags": []
+          }
+        ],
+        "thresholds": [],
+        "timeFrom": null,
+        "timeRegions": [],
+        "timeShift": null,
+        "title": "Connexion Internet",
+        "tooltip": {
+          "shared": true,
+          "sort": 2,
+          "value_type": "individual"
+        },
+        "type": "graph",
+        "xaxis": {
+          "buckets": null,
+          "mode": "time",
+          "name": null,
+          "show": true,
+          "values": []
+        },
+        "yaxes": [
+          {
+            "format": "bps",
+            "label": null,
+            "logBase": 1,
+            "max": null,
+            "min": null,
+            "show": true
+          },
+          {
+            "format": "short",
+            "label": null,
+            "logBase": 1,
+            "max": null,
+            "min": null,
+            "show": true
+          }
+        ],
+        "yaxis": {
+          "align": false,
+          "alignLevel": null
+        }
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "percent"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 6,
+          "w": 8,
+          "x": 16,
+          "y": 4
+        },
+        "id": 13,
+        "options": {
+          "displayMode": "basic",
+          "orientation": "horizontal",
+          "reduceOptions": {
+            "calcs": [
+              "mean"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showUnfilled": true
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Disk"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 1 - Volume 1"
+                ],
+                "text": "setAlias(NAS 1 - Volume 1)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "Storage Used on /volume1 (%)"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Disk"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 1 - Volume 2"
+                ],
+                "text": "setAlias(NAS 1 - Volume 2)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "Storage Used on /volume2 (%)"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "C",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Disk"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 2 - Volume 1"
+                ],
+                "text": "setAlias(NAS 2 - Volume 1)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 2"
+            },
+            "item": {
+              "filter": "Storage Used on /volume1 (%)"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "B",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Volumes"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 3 - Volume 1"
+                ],
+                "text": "setAlias(NAS 3 - Volume 1)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 3"
+            },
+            "item": {
+              "filter": "USed size of [Volume Volume1, Pool 1] (%)"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "D",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "Stockages NAS",
+        "type": "bargauge"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "percent"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 7,
+          "x": 0,
+          "y": 10
+        },
+        "id": 37,
+        "options": {
+          "displayMode": "basic",
+          "orientation": "horizontal",
+          "reduceOptions": {
+            "calcs": [
+              "mean"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showUnfilled": true
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Disk"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "Partition 1"
+                ],
+                "text": "setAlias(Partition 1)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 2"
+            },
+            "item": {
+              "filter": "Storage Used on /volume1 (%)"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "B",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Disk"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "Partition 2"
+                ],
+                "text": "setAlias(Partition 2)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "Storage Used on /volume2 (%)"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "Stockages ESXi",
+        "type": "bargauge"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": null
+                },
+                {
+                  "color": "green",
+                  "value": 100
+                }
+              ]
+            },
+            "unit": "decbytes"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 2,
+          "w": 2,
+          "x": 7,
+          "y": 10
+        },
+        "id": 38,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Disk"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "Storage Free on /volume1"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "Part 1",
+        "type": "stat"
+      },
+      {
+        "cacheTimeout": null,
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [
+              {
+                "id": 0,
+                "op": "=",
+                "text": "N/A",
+                "type": 1,
+                "value": "null"
+              }
+            ],
+            "nullValueMode": "connected",
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": null
+                },
+                {
+                  "color": "green",
+                  "value": 95
+                }
+              ]
+            },
+            "unit": "percent"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 3,
+          "w": 2,
+          "x": 9,
+          "y": 10
+        },
+        "id": 45,
+        "links": [],
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "horizontal",
+          "reduceOptions": {
+            "calcs": [
+              "mean"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "/Interface/"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - SWITCH"
+            },
+            "itServiceFilter": "RESEAUX",
+            "item": {
+              "filter": "/.*/"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 1,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "slaInterval": "none",
+            "slaProperty": {
+              "name": "SLA",
+              "property": "sla"
+            },
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "SLA - BAIE",
+        "type": "stat"
+      },
+      {
+        "cacheTimeout": null,
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [
+              {
+                "id": 0,
+                "op": "=",
+                "text": "N/A",
+                "type": 1,
+                "value": "null"
+              }
+            ],
+            "nullValueMode": "connected",
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": null
+                },
+                {
+                  "color": "green",
+                  "value": 95
+                }
+              ]
+            },
+            "unit": "percent"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 3,
+          "w": 3,
+          "x": 11,
+          "y": 10
+        },
+        "id": 47,
+        "links": [],
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "horizontal",
+          "reduceOptions": {
+            "calcs": [
+              "mean"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "/Interface/"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - SWITCH"
+            },
+            "itServiceFilter": "SERVICES",
+            "item": {
+              "filter": "/.*/"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 1,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "slaInterval": "none",
+            "slaProperty": {
+              "name": "SLA",
+              "property": "sla"
+            },
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "SLA - SERVICES",
+        "type": "stat"
+      },
+      {
+        "cacheTimeout": null,
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [
+              {
+                "id": 0,
+                "op": "=",
+                "text": "N/A",
+                "type": 1,
+                "value": "null"
+              }
+            ],
+            "nullValueMode": "connected",
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": null
+                },
+                {
+                  "color": "green",
+                  "value": 95
+                }
+              ]
+            },
+            "unit": "percent"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 3,
+          "w": 2,
+          "x": 14,
+          "y": 10
+        },
+        "id": 46,
+        "links": [],
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "horizontal",
+          "reduceOptions": {
+            "calcs": [
+              "mean"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "/Interface/"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - SWITCH"
+            },
+            "itServiceFilter": "SERVEURS",
+            "item": {
+              "filter": "/.*/"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 1,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "slaInterval": "none",
+            "slaProperty": {
+              "name": "SLA",
+              "property": "sla"
+            },
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "SLA - SERVEURS",
+        "type": "stat"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": null
+                },
+                {
+                  "color": "green",
+                  "value": 100
+                }
+              ]
+            },
+            "unit": "decbytes"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 2,
+          "w": 2,
+          "x": 16,
+          "y": 10
+        },
+        "id": 16,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Disk"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "Storage Free on /volume1"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "NAS 1 - V 1",
+        "type": "stat"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": null
+                },
+                {
+                  "color": "green",
+                  "value": 100
+                }
+              ]
+            },
+            "unit": "decbytes"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 2,
+          "w": 2,
+          "x": 18,
+          "y": 10
+        },
+        "id": 18,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Disk"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "Storage Free on /volume2"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "NAS 1 - V 2",
+        "type": "stat"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": null
+                },
+                {
+                  "color": "green",
+                  "value": 100
+                }
+              ]
+            },
+            "unit": "decbytes"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 2,
+          "w": 2,
+          "x": 20,
+          "y": 10
+        },
+        "id": 19,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Disk"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 2"
+            },
+            "item": {
+              "filter": "Storage Free on /volume1"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "NAS 2 - V 1",
+        "type": "stat"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": null
+                },
+                {
+                  "color": "green",
+                  "value": 100
+                }
+              ]
+            },
+            "unit": "decbytes"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 2,
+          "w": 2,
+          "x": 22,
+          "y": 10
+        },
+        "id": 34,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Volumes"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 3"
+            },
+            "item": {
+              "filter": "Free size of [Volume Volume1, Pool 1]"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "NAS 3 - V 1",
+        "type": "stat"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": null
+                },
+                {
+                  "color": "green",
+                  "value": 100
+                }
+              ]
+            },
+            "unit": "decbytes"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 2,
+          "w": 2,
+          "x": 7,
+          "y": 12
+        },
+        "id": 39,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Disk"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 2"
+            },
+            "item": {
+              "filter": "Storage Free on /volume1"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "Part 2",
+        "type": "stat"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [
+              {
+                "from": "",
+                "id": 1,
+                "operator": "",
+                "text": "OK",
+                "to": "",
+                "type": 1,
+                "value": "1"
+              },
+              {
+                "from": "",
+                "id": 2,
+                "operator": "",
+                "text": "ERROR",
+                "to": "",
+                "type": 1,
+                "value": "0"
+              },
+              {
+                "from": "",
+                "id": 3,
+                "operator": "",
+                "text": "ERROR",
+                "to": "",
+                "type": 1,
+                "value": "2"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": null
+                },
+                {
+                  "color": "green",
+                  "value": 1
+                },
+                {
+                  "color": "red",
+                  "value": 2
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 2,
+          "w": 2,
+          "x": 16,
+          "y": 12
+        },
+        "id": 29,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Synology RAID"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "Volume 1 RAID Status"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "NAS 1 - V 1",
+        "type": "stat"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [
+              {
+                "from": "",
+                "id": 1,
+                "operator": "",
+                "text": "OK",
+                "to": "",
+                "type": 1,
+                "value": "1"
+              },
+              {
+                "from": "",
+                "id": 2,
+                "operator": "",
+                "text": "ERROR",
+                "to": "",
+                "type": 1,
+                "value": "0"
+              },
+              {
+                "from": "",
+                "id": 3,
+                "operator": "",
+                "text": "ERROR",
+                "to": "",
+                "type": 1,
+                "value": "2"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": null
+                },
+                {
+                  "color": "green",
+                  "value": 1
+                },
+                {
+                  "color": "red",
+                  "value": 2
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 2,
+          "w": 2,
+          "x": 18,
+          "y": 12
+        },
+        "id": 30,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Synology RAID"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "Volume 2 RAID Status"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "NAS 1 - V 2",
+        "type": "stat"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [
+              {
+                "from": "",
+                "id": 1,
+                "operator": "",
+                "text": "OK",
+                "to": "",
+                "type": 1,
+                "value": "1"
+              },
+              {
+                "from": "",
+                "id": 2,
+                "operator": "",
+                "text": "ERROR",
+                "to": "",
+                "type": 1,
+                "value": "0"
+              },
+              {
+                "from": "",
+                "id": 3,
+                "operator": "",
+                "text": "ERROR",
+                "to": "",
+                "type": 1,
+                "value": "2"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": null
+                },
+                {
+                  "color": "green",
+                  "value": 1
+                },
+                {
+                  "color": "red",
+                  "value": 2
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 2,
+          "w": 2,
+          "x": 20,
+          "y": 12
+        },
+        "id": 31,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Synology RAID"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 2"
+            },
+            "item": {
+              "filter": "Volume 1 RAID Status"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "NAS 2 - V 1",
+        "type": "stat"
+      },
+      {
+        "cacheTimeout": null,
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "mappings": [
+              {
+                "id": 0,
+                "op": "=",
+                "text": "N/A",
+                "type": 1,
+                "value": "null"
+              }
+            ],
+            "nullValueMode": "connected",
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "none"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 2,
+          "w": 2,
+          "x": 22,
+          "y": 12
+        },
+        "id": 35,
+        "links": [],
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "horizontal",
+          "reduceOptions": {
+            "calcs": [
+              "mean"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "7.1.3",
+        "targets": [
+          {
+            "application": {
+              "filter": "Volumes"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 3"
+            },
+            "item": {
+              "filter": "Status of [Volume Volume1, Pool 1]"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 2,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "NAS 3 - V 1",
+        "type": "stat"
+      },
+      {
+        "bgColor": null,
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 3,
+          "w": 7,
+          "x": 9,
+          "y": 13
+        },
+        "id": 33,
+        "targets": [
+          {
+            "application": {
+              "filter": "System Health"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 1"
+                ],
+                "text": "setAlias(NAS 1)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "System Status"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "System Health"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 2"
+                ],
+                "text": "setAlias(NAS 2)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 2"
+            },
+            "item": {
+              "filter": "System Status"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "B",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Status"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "Routeur"
+                ],
+                "text": "setAlias(Routeur)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - Firewall USG"
+            },
+            "item": {
+              "filter": "SNMP agent availability"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "C",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Status"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "Station"
+                ],
+                "text": "setAlias(Station)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - STATION BAIE"
+            },
+            "item": {
+              "filter": "Zabbix agent availability"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "D",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Status"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "Switch"
+                ],
+                "text": "setAlias(Switch)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - SWITCH"
+            },
+            "item": {
+              "filter": "SNMP agent availability"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "E",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Status"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 3"
+                ],
+                "text": "setAlias(NAS 3)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 3"
+            },
+            "item": {
+              "filter": "ICMP ping"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "F",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "",
+        "trafficLightSettings": {
+          "digits": 1,
+          "fontColor": "rgb(224, 216, 216)",
+          "fontSize": "12px",
+          "greenThreshold": 1,
+          "invertScale": false,
+          "lightsPerLine": 5,
+          "linkTargetBlank": false,
+          "linkTooltip": "",
+          "linkUrl": "",
+          "max": 2,
+          "redThreshold": 0,
+          "renderLink": false,
+          "showTrend": false,
+          "showValue": false,
+          "sortLights": true,
+          "spreadControls": true,
+          "units": "",
+          "width": 20
+        },
+        "type": "snuids-trafficlights-panel"
+      },
+      {
+        "aliasColors": {},
+        "bars": false,
+        "dashLength": 10,
+        "dashes": false,
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "links": []
+          },
+          "overrides": []
+        },
+        "fill": 1,
+        "fillGradient": 0,
+        "gridPos": {
+          "h": 5,
+          "w": 9,
+          "x": 0,
+          "y": 14
+        },
+        "hiddenSeries": false,
+        "id": 26,
+        "legend": {
+          "alignAsTable": true,
+          "avg": true,
+          "current": true,
+          "hideEmpty": false,
+          "max": false,
+          "min": false,
+          "rightSide": true,
+          "show": true,
+          "total": false,
+          "values": true
+        },
+        "lines": true,
+        "linewidth": 1,
+        "nullPointMode": "null",
+        "percentage": false,
+        "pluginVersion": "7.1.3",
+        "pointradius": 2,
+        "points": false,
+        "renderer": "flot",
+        "seriesOverrides": [],
+        "spaceLength": 10,
+        "stack": false,
+        "steppedLine": false,
+        "targets": [
+          {
+            "application": {
+              "filter": "CPU"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "CPU"
+                ],
+                "text": "setAlias(CPU)"
+              }
+            ],
+            "group": {
+              "filter": "VPS"
+            },
+            "host": {
+              "filter": "VPS - ORION"
+            },
+            "item": {
+              "filter": "CPU utilization"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Memory"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "RAM"
+                ],
+                "text": "setAlias(RAM)"
+              }
+            ],
+            "group": {
+              "filter": "VPS"
+            },
+            "host": {
+              "filter": "VPS - ORION"
+            },
+            "item": {
+              "filter": "Memory utilization"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "B",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "thresholds": [],
+        "timeFrom": null,
+        "timeRegions": [],
+        "timeShift": null,
+        "title": "CPU & RAM",
+        "tooltip": {
+          "shared": true,
+          "sort": 2,
+          "value_type": "individual"
+        },
+        "type": "graph",
+        "xaxis": {
+          "buckets": null,
+          "mode": "time",
+          "name": null,
+          "show": true,
+          "values": []
+        },
+        "yaxes": [
+          {
+            "decimals": null,
+            "format": "percent",
+            "label": null,
+            "logBase": 1,
+            "max": "100",
+            "min": null,
+            "show": true
+          },
+          {
+            "format": "short",
+            "label": null,
+            "logBase": 1,
+            "max": null,
+            "min": null,
+            "show": true
+          }
+        ],
+        "yaxis": {
+          "align": false,
+          "alignLevel": null
+        }
+      },
+      {
+        "aliasColors": {},
+        "bars": false,
+        "dashLength": 10,
+        "dashes": false,
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "links": []
+          },
+          "overrides": []
+        },
+        "fill": 1,
+        "fillGradient": 0,
+        "gridPos": {
+          "h": 5,
+          "w": 8,
+          "x": 16,
+          "y": 14
+        },
+        "hiddenSeries": false,
+        "id": 40,
+        "legend": {
+          "alignAsTable": true,
+          "avg": true,
+          "current": true,
+          "max": false,
+          "min": false,
+          "rightSide": true,
+          "show": true,
+          "total": false,
+          "values": true
+        },
+        "lines": true,
+        "linewidth": 1,
+        "nullPointMode": "null",
+        "percentage": false,
+        "pluginVersion": "7.1.3",
+        "pointradius": 2,
+        "points": false,
+        "renderer": "flot",
+        "seriesOverrides": [],
+        "spaceLength": 10,
+        "stack": false,
+        "steppedLine": false,
+        "targets": [
+          {
+            "application": {
+              "filter": "CPU"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 1"
+                ],
+                "text": "setAlias(NAS 1)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "Load Avg 1 min"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "CPU"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 2"
+                ],
+                "text": "setAlias(NAS 2)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 2"
+            },
+            "item": {
+              "filter": "Load Avg 1 min"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "B",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "thresholds": [],
+        "timeFrom": null,
+        "timeRegions": [],
+        "timeShift": null,
+        "title": "CPU NAS",
+        "tooltip": {
+          "shared": true,
+          "sort": 2,
+          "value_type": "individual"
+        },
+        "type": "graph",
+        "xaxis": {
+          "buckets": null,
+          "mode": "time",
+          "name": null,
+          "show": true,
+          "values": []
+        },
+        "yaxes": [
+          {
+            "decimals": -1,
+            "format": "percentunit",
+            "label": null,
+            "logBase": 1,
+            "max": "1",
+            "min": null,
+            "show": true
+          },
+          {
+            "format": "short",
+            "label": null,
+            "logBase": 1,
+            "max": null,
+            "min": null,
+            "show": true
+          }
+        ],
+        "yaxis": {
+          "align": false,
+          "alignLevel": null
+        }
+      },
+      {
+        "bgColor": null,
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 3,
+          "w": 7,
+          "x": 9,
+          "y": 16
+        },
+        "id": 36,
+        "targets": [
+          {
+            "application": {
+              "filter": "System Health"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "Proxy Zabbix"
+                ],
+                "text": "setAlias(Proxy Zabbix)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "System Status"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "System Health"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "Jeedom"
+                ],
+                "text": "setAlias(Jeedom)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 2"
+            },
+            "item": {
+              "filter": "System Status"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "B",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Status"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "pfSense L1"
+                ],
+                "text": "setAlias(pfSense L1)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - Routeur"
+            },
+            "item": {
+              "filter": "SNMP agent availability"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "C",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Status"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "Guacamole"
+                ],
+                "text": "setAlias(Guacamole)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - STATION BAIE"
+            },
+            "item": {
+              "filter": "Zabbix agent availability"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "D",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Status"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "pfSense L2"
+                ],
+                "text": "setAlias(pfSense L2)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - SWITCH"
+            },
+            "item": {
+              "filter": "SNMP agent availability"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "E",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Status"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "ESXi"
+                ],
+                "text": "setAlias(ESXi)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 3"
+            },
+            "item": {
+              "filter": "ICMP ping"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "F",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "",
+        "trafficLightSettings": {
+          "digits": 1,
+          "fontColor": "rgb(224, 216, 216)",
+          "fontSize": "12px",
+          "greenThreshold": 1,
+          "invertScale": false,
+          "lightsPerLine": 5,
+          "linkTargetBlank": false,
+          "linkTooltip": "",
+          "linkUrl": "",
+          "max": 2,
+          "redThreshold": 0,
+          "renderLink": false,
+          "showTrend": false,
+          "showValue": false,
+          "sortLights": true,
+          "spreadControls": true,
+          "units": "",
+          "width": 20
+        },
+        "type": "snuids-trafficlights-panel"
+      },
+      {
+        "aliasColors": {},
+        "bars": false,
+        "dashLength": 10,
+        "dashes": false,
+        "datasource": null,
+        "decimals": 0,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "links": []
+          },
+          "overrides": []
+        },
+        "fill": 1,
+        "fillGradient": 0,
+        "gridPos": {
+          "h": 4,
+          "w": 9,
+          "x": 0,
+          "y": 19
+        },
+        "hiddenSeries": false,
+        "id": 41,
+        "legend": {
+          "alignAsTable": true,
+          "avg": true,
+          "current": true,
+          "max": false,
+          "min": false,
+          "rightSide": true,
+          "show": true,
+          "total": false,
+          "values": true
+        },
+        "lines": true,
+        "linewidth": 1,
+        "nullPointMode": "null",
+        "percentage": false,
+        "pluginVersion": "7.1.3",
+        "pointradius": 2,
+        "points": false,
+        "renderer": "flot",
+        "seriesOverrides": [],
+        "spaceLength": 10,
+        "stack": false,
+        "steppedLine": false,
+        "targets": [
+          {
+            "application": {
+              "filter": "Disk sda"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "Lecture"
+                ],
+                "text": "setAlias(Lecture)"
+              }
+            ],
+            "group": {
+              "filter": "VPS"
+            },
+            "host": {
+              "filter": "VPS - ORION"
+            },
+            "item": {
+              "filter": "sda: Disk read rate"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Disk sda"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "Ecriture"
+                ],
+                "text": "setAlias(Ecriture)"
+              }
+            ],
+            "group": {
+              "filter": "VPS"
+            },
+            "host": {
+              "filter": "VPS - ORION"
+            },
+            "item": {
+              "filter": "sda: Disk write rate"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "B",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "thresholds": [],
+        "timeFrom": null,
+        "timeRegions": [],
+        "timeShift": null,
+        "title": "DISQUES I/O",
+        "tooltip": {
+          "shared": true,
+          "sort": 2,
+          "value_type": "individual"
+        },
+        "type": "graph",
+        "xaxis": {
+          "buckets": null,
+          "mode": "time",
+          "name": null,
+          "show": true,
+          "values": []
+        },
+        "yaxes": [
+          {
+            "decimals": null,
+            "format": "short",
+            "label": null,
+            "logBase": 1,
+            "max": null,
+            "min": null,
+            "show": true
+          },
+          {
+            "format": "short",
+            "label": null,
+            "logBase": 1,
+            "max": null,
+            "min": null,
+            "show": true
+          }
+        ],
+        "yaxis": {
+          "align": false,
+          "alignLevel": null
+        }
+      },
+      {
+        "cacheTimeout": null,
+        "colorBackground": false,
+        "colorValue": false,
+        "colors": [
+          "#299c46",
+          "rgba(237, 129, 40, 0.89)",
+          "#d44a3a"
+        ],
+        "datasource": null,
+        "decimals": 0,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "format": "short",
+        "gauge": {
+          "maxValue": 100,
+          "minValue": 0,
+          "show": false,
+          "thresholdLabels": false,
+          "thresholdMarkers": true
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 3,
+          "x": 9,
+          "y": 19
+        },
+        "id": 42,
+        "interval": null,
+        "links": [],
+        "mappingType": 1,
+        "mappingTypes": [
+          {
+            "name": "value to text",
+            "value": 1
+          },
+          {
+            "name": "range to text",
+            "value": 2
+          }
+        ],
+        "maxDataPoints": 100,
+        "nullPointMode": "connected",
+        "nullText": null,
+        "pluginVersion": "6.7.1",
+        "postfix": "",
+        "postfixFontSize": "50%",
+        "prefix": "",
+        "prefixFontSize": "50%",
+        "rangeMaps": [
+          {
+            "from": "null",
+            "text": "N/A",
+            "to": "null"
+          }
+        ],
+        "sparkline": {
+          "fillColor": "rgba(31, 118, 189, 0.18)",
+          "full": false,
+          "lineColor": "rgb(31, 120, 193)",
+          "show": false,
+          "ymax": null,
+          "ymin": null
+        },
+        "tableColumn": "",
+        "targets": [
+          {
+            "application": {
+              "filter": "Speed Test"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - STATION BAIE"
+            },
+            "item": {
+              "filter": "Ping"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "thresholds": "",
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "VM TOTAL",
+        "type": "singlestat",
+        "valueFontSize": "100%",
+        "valueMaps": [
+          {
+            "op": "=",
+            "text": "N/A",
+            "value": "null"
+          }
+        ],
+        "valueName": "current"
+      },
+      {
+        "cacheTimeout": null,
+        "colorBackground": false,
+        "colorValue": true,
+        "colors": [
+          "#299c46",
+          "rgba(237, 129, 40, 0.89)",
+          "#d44a3a"
+        ],
+        "datasource": null,
+        "decimals": 0,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "format": "short",
+        "gauge": {
+          "maxValue": 100,
+          "minValue": 0,
+          "show": false,
+          "thresholdLabels": false,
+          "thresholdMarkers": true
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 2,
+          "x": 12,
+          "y": 19
+        },
+        "id": 43,
+        "interval": null,
+        "links": [],
+        "mappingType": 1,
+        "mappingTypes": [
+          {
+            "name": "value to text",
+            "value": 1
+          },
+          {
+            "name": "range to text",
+            "value": 2
+          }
+        ],
+        "maxDataPoints": 100,
+        "nullPointMode": "connected",
+        "nullText": null,
+        "pluginVersion": "6.7.1",
+        "postfix": "",
+        "postfixFontSize": "50%",
+        "prefix": "",
+        "prefixFontSize": "50%",
+        "rangeMaps": [
+          {
+            "from": "null",
+            "text": "N/A",
+            "to": "null"
+          }
+        ],
+        "sparkline": {
+          "fillColor": "rgba(31, 118, 189, 0.18)",
+          "full": false,
+          "lineColor": "rgb(31, 120, 193)",
+          "show": false,
+          "ymax": null,
+          "ymin": null
+        },
+        "tableColumn": "",
+        "targets": [
+          {
+            "application": {
+              "filter": "Speed Test"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - STATION BAIE"
+            },
+            "item": {
+              "filter": "Ping"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "thresholds": "",
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "VM ON",
+        "type": "singlestat",
+        "valueFontSize": "100%",
+        "valueMaps": [
+          {
+            "op": "=",
+            "text": "N/A",
+            "value": "null"
+          }
+        ],
+        "valueName": "current"
+      },
+      {
+        "cacheTimeout": null,
+        "colorBackground": false,
+        "colorValue": true,
+        "colors": [
+          "#d44a3a",
+          "rgba(237, 129, 40, 0.89)",
+          "#299c46"
+        ],
+        "datasource": null,
+        "decimals": 0,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "format": "short",
+        "gauge": {
+          "maxValue": 100,
+          "minValue": 0,
+          "show": false,
+          "thresholdLabels": false,
+          "thresholdMarkers": true
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 2,
+          "x": 14,
+          "y": 19
+        },
+        "id": 44,
+        "interval": null,
+        "links": [],
+        "mappingType": 1,
+        "mappingTypes": [
+          {
+            "name": "value to text",
+            "value": 1
+          },
+          {
+            "name": "range to text",
+            "value": 2
+          }
+        ],
+        "maxDataPoints": 100,
+        "nullPointMode": "connected",
+        "nullText": null,
+        "pluginVersion": "6.7.1",
+        "postfix": "",
+        "postfixFontSize": "50%",
+        "prefix": "",
+        "prefixFontSize": "50%",
+        "rangeMaps": [
+          {
+            "from": "null",
+            "text": "N/A",
+            "to": "null"
+          }
+        ],
+        "sparkline": {
+          "fillColor": "rgba(31, 118, 189, 0.18)",
+          "full": false,
+          "lineColor": "rgb(31, 120, 193)",
+          "show": false,
+          "ymax": null,
+          "ymin": null
+        },
+        "tableColumn": "",
+        "targets": [
+          {
+            "application": {
+              "filter": "Speed Test"
+            },
+            "functions": [],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - STATION BAIE"
+            },
+            "item": {
+              "filter": "Ping"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "thresholds": "",
+        "timeFrom": null,
+        "timeShift": null,
+        "title": "VM OFF",
+        "type": "singlestat",
+        "valueFontSize": "100%",
+        "valueMaps": [
+          {
+            "op": "=",
+            "text": "N/A",
+            "value": "null"
+          }
+        ],
+        "valueName": "current"
+      },
+      {
+        "aliasColors": {},
+        "bars": false,
+        "dashLength": 10,
+        "dashes": false,
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {},
+            "links": []
+          },
+          "overrides": []
+        },
+        "fill": 1,
+        "fillGradient": 0,
+        "gridPos": {
+          "h": 4,
+          "w": 8,
+          "x": 16,
+          "y": 19
+        },
+        "hiddenSeries": false,
+        "id": 27,
+        "legend": {
+          "alignAsTable": true,
+          "avg": true,
+          "current": true,
+          "max": false,
+          "min": false,
+          "rightSide": true,
+          "show": true,
+          "total": false,
+          "values": true
+        },
+        "lines": true,
+        "linewidth": 1,
+        "nullPointMode": "null",
+        "percentage": false,
+        "pluginVersion": "7.1.3",
+        "pointradius": 2,
+        "points": false,
+        "renderer": "flot",
+        "seriesOverrides": [],
+        "spaceLength": 10,
+        "stack": false,
+        "steppedLine": false,
+        "targets": [
+          {
+            "application": {
+              "filter": "Synology Storageio"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 1 - sda"
+                ],
+                "text": "setAlias(NAS 1 - sda)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "Storage Load on Disk sda"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "A",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Synology Storageio"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 1 - sdb"
+                ],
+                "text": "setAlias(NAS 1 - sdb)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "Storage Load on Disk sdb"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "B",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Synology Storageio"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 1 - sdc"
+                ],
+                "text": "setAlias(NAS 1 - sdc)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "Storage Load on Disk sdc"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "C",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Synology Storageio"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 1 - sdd"
+                ],
+                "text": "setAlias(NAS 1 - sdd)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 1"
+            },
+            "item": {
+              "filter": "Storage Load on Disk sdd"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "D",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Synology Storageio"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 2 - sdd"
+                ],
+                "text": "setAlias(NAS 2 - sdd)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 2"
+            },
+            "item": {
+              "filter": "Storage Load on Disk sdd"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "E",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Synology Storageio"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 2 - sda"
+                ],
+                "text": "setAlias(NAS 2 - sda)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 2"
+            },
+            "item": {
+              "filter": "Storage Load on Disk sda"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "F",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Synology Storageio"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 2 - sdb"
+                ],
+                "text": "setAlias(NAS 2 - sdb)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 2"
+            },
+            "item": {
+              "filter": "Storage Load on Disk sdb"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "G",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          },
+          {
+            "application": {
+              "filter": "Synology Storageio"
+            },
+            "functions": [
+              {
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAlias",
+                  "params": [
+                    {
+                      "name": "alias",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "NAS 2 - sdc"
+                ],
+                "text": "setAlias(NAS 2 - sdc)"
+              }
+            ],
+            "group": {
+              "filter": "MAISON"
+            },
+            "host": {
+              "filter": "MAISON - NAS 2"
+            },
+            "item": {
+              "filter": "Storage Load on Disk sdc"
+            },
+            "options": {
+              "showDisabledItems": false,
+              "skipEmptyValues": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": 0,
+            "refId": "H",
+            "resultFormat": "time_series",
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2,
+              "count": true,
+              "minSeverity": 3
+            }
+          }
+        ],
+        "thresholds": [],
+        "timeFrom": null,
+        "timeRegions": [],
+        "timeShift": null,
+        "title": "DISQUES NAS",
+        "tooltip": {
+          "shared": true,
+          "sort": 2,
+          "value_type": "individual"
+        },
+        "type": "graph",
+        "xaxis": {
+          "buckets": null,
+          "mode": "time",
+          "name": null,
+          "show": true,
+          "values": []
+        },
+        "yaxes": [
+          {
+            "decimals": -1,
+            "format": "none",
+            "label": null,
+            "logBase": 1,
+            "max": null,
+            "min": null,
+            "show": true
+          },
+          {
+            "format": "short",
+            "label": null,
+            "logBase": 1,
+            "max": null,
+            "min": null,
+            "show": true
+          }
+        ],
+        "yaxis": {
+          "align": false,
+          "alignLevel": null
+        }
+      }
+    ],
+    "refresh": "5s",
+    "schemaVersion": 26,
+    "style": "dark",
+    "tags": [],
+    "templating": {
+      "list": []
+    },
+    "time": {
+      "from": "now-6h",
+      "to": "now"
+    },
+    "timepicker": {
+      "refresh_intervals": [
+        "5s",
+        "10s",
+        "30s",
+        "1m",
+        "5m",
+        "15m",
+        "30m",
+        "1h",
+        "2h",
+        "1d"
+      ]
+    },
+    "timezone": "",
+    "title": "BAIE",
+    "uid": "IZ9m0r4Mk",
+    "version": 48
+  }
