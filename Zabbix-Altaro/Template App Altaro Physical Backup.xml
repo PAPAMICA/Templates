@@ -115,7 +115,7 @@
     </templates>
     <triggers>
     <trigger>
-            <expression>{Template App Altaro Phisical Backup:altaroP.backupstatus[offsite].last()}>0</expression>
+            <expression>{Template App Altaro Physical Backup:altaroP.backupstatus[offsite].last()}>0</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>Altaro Offsite Backup on {HOST.NAME} are in error !</name>
