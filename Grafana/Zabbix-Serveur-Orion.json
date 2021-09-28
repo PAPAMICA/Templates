@@ -1,2423 +1,1501 @@
 {
-    "annotations": {
-      "list": [
-        {
-          "builtIn": 1,
-          "datasource": "-- Grafana --",
-          "enable": true,
-          "hide": true,
-          "iconColor": "rgba(0, 211, 255, 1)",
-          "name": "Annotations & Alerts",
+  "annotations": {
+    "list": [
+      {
+        "$$hashKey": "object:243",
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
           "type": "dashboard"
-        }
-      ]
-    },
-    "editable": true,
-    "gnetId": null,
-    "graphTooltip": 0,
-    "id": 3,
-    "links": [],
-    "panels": [
-      {
-        "bgColor": null,
-        "datasource": null,
-        "fieldConfig": {
-          "defaults": {
-            "custom": {}
-          },
-          "overrides": []
         },
-        "gridPos": {
-          "h": 3,
-          "w": 24,
-          "x": 0,
-          "y": 0
-        },
-        "id": 12,
-        "targets": [
-          {
-            "application": {
-              "filter": "Docker: Container /traefik"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "Traefik"
-                ],
-                "text": "setAlias(Traefik)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /traefik: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "A",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /portainer"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "Portainer"
-                ],
-                "text": "setAlias(Portainer)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /portainer: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "B",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /teamspeak"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "TeamSpeak"
-                ],
-                "text": "setAlias(TeamSpeak)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /teamspeak: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "C",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /polr"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "ShortUrl"
-                ],
-                "text": "setAlias(ShortUrl)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /polr: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "D",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /nextcloud"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "NextCloud"
-                ],
-                "text": "setAlias(NextCloud)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /nextcloud: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "E",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /hastebin"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "Hastebin"
-                ],
-                "text": "setAlias(Hastebin)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /hastebin: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "F",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /mumble"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "Mumble"
-                ],
-                "text": "setAlias(Mumble)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /mumble: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "G",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /teamspeak_sinusbot_1"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "TeamSpeak Bot"
-                ],
-                "text": "setAlias(TeamSpeak Bot)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /teamspeak_sinusbot_1: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "H",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /mumble-bot"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "Mumble Bot"
-                ],
-                "text": "setAlias(Mumble Bot)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /mumble-bot: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "I",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /cachet"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "Cachet"
-                ],
-                "text": "setAlias(Cachet)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /cachet: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "J",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          }
-        ],
-        "timeFrom": null,
-        "timeShift": null,
-        "title": "",
-        "trafficLightSettings": {
-          "digits": 1,
-          "fontColor": "rgb(255, 255, 255)",
-          "fontSize": "12px",
-          "greenThreshold": 1,
-          "invertScale": false,
-          "lightsPerLine": 5,
-          "linkTargetBlank": false,
-          "linkTooltip": "",
-          "linkUrl": "",
-          "max": 2,
-          "redThreshold": 0,
-          "renderLink": false,
-          "showTrend": false,
-          "showValue": false,
-          "sortLights": true,
-          "spreadControls": true,
-          "units": "",
-          "width": 20
-        },
-        "type": "snuids-trafficlights-panel"
-      },
-      {
-        "bgColor": null,
-        "datasource": null,
-        "fieldConfig": {
-          "defaults": {
-            "custom": {}
-          },
-          "overrides": []
-        },
-        "gridPos": {
-          "h": 3,
-          "w": 15,
-          "x": 0,
-          "y": 3
-        },
-        "id": 16,
-        "targets": [
-          {
-            "application": {
-              "filter": "Docker: Container /rutorrent"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "Rutorrent"
-                ],
-                "text": "setAlias(Rutorrent)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /rutorrent: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "A",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /radarr"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "Radarr"
-                ],
-                "text": "setAlias(Radarr)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /radarr: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "B",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /ombi"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "Ombi"
-                ],
-                "text": "setAlias(Ombi)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /ombi: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "C",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /plex"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "Plex"
-                ],
-                "text": "setAlias(Plex)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /plex: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "D",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /jackett"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "Jackett"
-                ],
-                "text": "setAlias(Jackett)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /jackett: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "E",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /filebot"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "Filebot"
-                ],
-                "text": "setAlias(Filebot)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /filebot: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "F",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          }
-        ],
-        "timeFrom": null,
-        "timeShift": null,
-        "title": "",
-        "trafficLightSettings": {
-          "digits": 1,
-          "fontColor": "rgb(255, 255, 255)",
-          "fontSize": "12px",
-          "greenThreshold": 1,
-          "invertScale": false,
-          "lightsPerLine": 5,
-          "linkTargetBlank": false,
-          "linkTooltip": "",
-          "linkUrl": "",
-          "max": 2,
-          "redThreshold": 0,
-          "renderLink": false,
-          "showTrend": false,
-          "showValue": false,
-          "sortLights": true,
-          "spreadControls": true,
-          "units": "",
-          "width": 20
-        },
-        "type": "snuids-trafficlights-panel"
-      },
-      {
-        "bgColor": null,
-        "datasource": null,
-        "fieldConfig": {
-          "defaults": {
-            "custom": {}
-          },
-          "overrides": []
-        },
-        "gridPos": {
-          "h": 3,
-          "w": 9,
-          "x": 15,
-          "y": 3
-        },
-        "id": 17,
-        "targets": [
-          {
-            "application": {
-              "filter": "Docker: Container /site-wp-cadeau"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "cadeau"
-                ],
-                "text": "setAlias(cadeau)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /site-wp-cadeau: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "A",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /site-csgo"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "csgo"
-                ],
-                "text": "setAlias(csgo)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /site-csgo: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "B",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /site-solene"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "solene"
-                ],
-                "text": "setAlias(solene)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /site-solene: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "C",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /site-wp-portfolio"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "portfolio"
-                ],
-                "text": "setAlias(portfolio)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /site-wp-portfolio: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "D",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Docker: Container /site-wp-elodie"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "elodie"
-                ],
-                "text": "setAlias(elodie)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Container /site-wp-elodie: Running"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "E",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          }
-        ],
-        "timeFrom": null,
-        "timeShift": null,
-        "title": "",
-        "trafficLightSettings": {
-          "digits": 1,
-          "fontColor": "rgb(255, 255, 255)",
-          "fontSize": "12px",
-          "greenThreshold": 1,
-          "invertScale": false,
-          "lightsPerLine": 5,
-          "linkTargetBlank": false,
-          "linkTooltip": "",
-          "linkUrl": "",
-          "max": 2,
-          "redThreshold": 0,
-          "renderLink": false,
-          "showTrend": false,
-          "showValue": false,
-          "sortLights": true,
-          "spreadControls": true,
-          "units": "",
-          "width": 20
-        },
-        "type": "snuids-trafficlights-panel"
-      },
-      {
-        "aliasColors": {},
-        "bars": false,
-        "dashLength": 10,
-        "dashes": false,
-        "datasource": null,
-        "fieldConfig": {
-          "defaults": {
-            "custom": {},
-            "links": []
-          },
-          "overrides": []
-        },
-        "fill": 2,
-        "fillGradient": 6,
-        "gridPos": {
-          "h": 10,
-          "w": 11,
-          "x": 0,
-          "y": 6
-        },
-        "hiddenSeries": false,
-        "id": 2,
-        "legend": {
-          "alignAsTable": false,
-          "avg": false,
-          "current": false,
-          "max": false,
-          "min": false,
-          "rightSide": false,
-          "show": true,
-          "total": false,
-          "values": false
-        },
-        "lines": true,
-        "linewidth": 2,
-        "nullPointMode": "null",
-        "percentage": false,
-        "pluginVersion": "7.1.3",
-        "pointradius": 2,
-        "points": false,
-        "renderer": "flot",
-        "seriesOverrides": [],
-        "spaceLength": 10,
-        "stack": false,
-        "steppedLine": false,
-        "targets": [
-          {
-            "application": {
-              "filter": "Interface eno1"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "Download"
-                ],
-                "text": "setAlias(Download)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Interface eno1: Bits received"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "A",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          },
-          {
-            "application": {
-              "filter": "Interface eno1"
-            },
-            "functions": [
-              {
-                "def": {
-                  "category": "Alias",
-                  "defaultParams": [],
-                  "name": "setAlias",
-                  "params": [
-                    {
-                      "name": "alias",
-                      "type": "string"
-                    }
-                  ]
-                },
-                "params": [
-                  "Upload"
-                ],
-                "text": "setAlias(Upload)"
-              }
-            ],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Interface eno1: Bits sent"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "B",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          }
-        ],
-        "thresholds": [],
-        "timeFrom": null,
-        "timeRegions": [],
-        "timeShift": null,
-        "title": "NETWORK",
-        "tooltip": {
-          "shared": true,
-          "sort": 0,
-          "value_type": "individual"
-        },
-        "type": "graph",
-        "xaxis": {
-          "buckets": null,
-          "mode": "time",
-          "name": null,
-          "show": true,
-          "values": []
-        },
-        "yaxes": [
-          {
-            "decimals": null,
-            "format": "Bps",
-            "label": "",
-            "logBase": 1,
-            "max": "600000000",
-            "min": "0",
-            "show": true
-          },
-          {
-            "format": "short",
-            "label": null,
-            "logBase": 1,
-            "max": null,
-            "min": null,
-            "show": true
-          }
-        ],
-        "yaxis": {
-          "align": false,
-          "alignLevel": null
-        }
-      },
-      {
-        "aliasColors": {},
-        "bars": false,
-        "dashLength": 10,
-        "dashes": false,
-        "datasource": null,
-        "fieldConfig": {
-          "defaults": {
-            "custom": {},
-            "links": []
-          },
-          "overrides": []
-        },
-        "fill": 2,
-        "fillGradient": 6,
-        "gridPos": {
-          "h": 5,
-          "w": 9,
-          "x": 11,
-          "y": 6
-        },
-        "hiddenSeries": false,
-        "id": 4,
-        "legend": {
-          "avg": false,
-          "current": false,
-          "max": false,
-          "min": false,
-          "show": false,
-          "total": false,
-          "values": false
-        },
-        "lines": true,
-        "linewidth": 2,
-        "nullPointMode": "null",
-        "percentage": false,
-        "pluginVersion": "7.1.3",
-        "pointradius": 2,
-        "points": false,
-        "renderer": "flot",
-        "seriesOverrides": [],
-        "spaceLength": 10,
-        "stack": false,
-        "steppedLine": false,
-        "targets": [
-          {
-            "application": {
-              "filter": "Memory"
-            },
-            "functions": [],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Memory utilization"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "A",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          }
-        ],
-        "thresholds": [],
-        "timeFrom": null,
-        "timeRegions": [],
-        "timeShift": null,
-        "title": "RAM",
-        "tooltip": {
-          "shared": true,
-          "sort": 0,
-          "value_type": "individual"
-        },
-        "type": "graph",
-        "xaxis": {
-          "buckets": null,
-          "mode": "time",
-          "name": null,
-          "show": true,
-          "values": []
-        },
-        "yaxes": [
-          {
-            "format": "percent",
-            "label": null,
-            "logBase": 1,
-            "max": "100",
-            "min": "0",
-            "show": true
-          },
-          {
-            "format": "short",
-            "label": null,
-            "logBase": 1,
-            "max": null,
-            "min": null,
-            "show": true
-          }
-        ],
-        "yaxis": {
-          "align": false,
-          "alignLevel": null
-        }
-      },
-      {
-        "cacheTimeout": null,
-        "colorBackground": false,
-        "colorValue": true,
-        "colors": [
-          "#d44a3a",
-          "rgba(237, 129, 40, 0.89)",
-          "#299c46"
-        ],
-        "datasource": null,
-        "fieldConfig": {
-          "defaults": {
-            "custom": {}
-          },
-          "overrides": []
-        },
-        "format": "bytes",
-        "gauge": {
-          "maxValue": 100,
-          "minValue": 0,
-          "show": false,
-          "thresholdLabels": false,
-          "thresholdMarkers": true
-        },
-        "gridPos": {
-          "h": 5,
-          "w": 4,
-          "x": 20,
-          "y": 6
-        },
-        "id": 14,
-        "interval": null,
-        "links": [],
-        "mappingType": 1,
-        "mappingTypes": [
-          {
-            "name": "value to text",
-            "value": 1
-          },
-          {
-            "name": "range to text",
-            "value": 2
-          }
-        ],
-        "maxDataPoints": 100,
-        "nullPointMode": "connected",
-        "nullText": null,
-        "postfix": " / 16GiB",
-        "postfixFontSize": "50%",
-        "prefix": "",
-        "prefixFontSize": "50%",
-        "rangeMaps": [
-          {
-            "from": "null",
-            "text": "N/A",
-            "to": "null"
-          }
-        ],
-        "sparkline": {
-          "fillColor": "rgba(31, 118, 189, 0.18)",
-          "full": false,
-          "lineColor": "rgb(31, 120, 193)",
-          "show": false,
-          "ymax": null,
-          "ymin": null
-        },
-        "tableColumn": "",
-        "targets": [
-          {
-            "application": {
-              "filter": "Memory"
-            },
-            "functions": [],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Available memory"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "A",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          }
-        ],
-        "thresholds": "200000000,4000000000",
-        "timeFrom": null,
-        "timeShift": null,
-        "title": "FREE RAM",
-        "type": "singlestat",
-        "valueFontSize": "80%",
-        "valueMaps": [
-          {
-            "op": "=",
-            "text": "N/A",
-            "value": "null"
-          }
-        ],
-        "valueName": "current"
-      },
-      {
-        "aliasColors": {},
-        "bars": false,
-        "dashLength": 10,
-        "dashes": false,
-        "datasource": null,
-        "fieldConfig": {
-          "defaults": {
-            "custom": {},
-            "links": []
-          },
-          "overrides": []
-        },
-        "fill": 2,
-        "fillGradient": 6,
-        "gridPos": {
-          "h": 5,
-          "w": 9,
-          "x": 11,
-          "y": 11
-        },
-        "hiddenSeries": false,
-        "id": 5,
-        "legend": {
-          "avg": false,
-          "current": false,
-          "max": false,
-          "min": false,
-          "show": false,
-          "total": false,
-          "values": false
-        },
-        "lines": true,
-        "linewidth": 2,
-        "nullPointMode": "null",
-        "percentage": false,
-        "pluginVersion": "7.1.3",
-        "pointradius": 2,
-        "points": false,
-        "renderer": "flot",
-        "seriesOverrides": [],
-        "spaceLength": 10,
-        "stack": false,
-        "steppedLine": false,
-        "targets": [
-          {
-            "application": {
-              "filter": "CPU"
-            },
-            "functions": [],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "CPU utilization"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "A",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          }
-        ],
-        "thresholds": [],
-        "timeFrom": null,
-        "timeRegions": [],
-        "timeShift": null,
-        "title": "CPU",
-        "tooltip": {
-          "shared": true,
-          "sort": 0,
-          "value_type": "individual"
-        },
-        "type": "graph",
-        "xaxis": {
-          "buckets": null,
-          "mode": "time",
-          "name": null,
-          "show": true,
-          "values": []
-        },
-        "yaxes": [
-          {
-            "format": "percent",
-            "label": null,
-            "logBase": 1,
-            "max": "100",
-            "min": "0",
-            "show": true
-          },
-          {
-            "format": "short",
-            "label": null,
-            "logBase": 1,
-            "max": null,
-            "min": null,
-            "show": true
-          }
-        ],
-        "yaxis": {
-          "align": false,
-          "alignLevel": null
-        }
-      },
-      {
-        "cacheTimeout": null,
-        "colorBackground": false,
-        "colorValue": false,
-        "colors": [
-          "#299c46",
-          "rgba(237, 129, 40, 0.89)",
-          "#d44a3a"
-        ],
-        "datasource": null,
-        "fieldConfig": {
-          "defaults": {
-            "custom": {}
-          },
-          "overrides": []
-        },
-        "format": "none",
-        "gauge": {
-          "maxValue": 100,
-          "minValue": 0,
-          "show": false,
-          "thresholdLabels": false,
-          "thresholdMarkers": true
-        },
-        "gridPos": {
-          "h": 5,
-          "w": 4,
-          "x": 20,
-          "y": 11
-        },
-        "id": 15,
-        "interval": null,
-        "links": [],
-        "mappingType": 1,
-        "mappingTypes": [
-          {
-            "name": "value to text",
-            "value": 1
-          },
-          {
-            "name": "range to text",
-            "value": 2
-          }
-        ],
-        "maxDataPoints": 100,
-        "nullPointMode": "connected",
-        "nullText": null,
-        "postfix": "",
-        "postfixFontSize": "50%",
-        "prefix": "",
-        "prefixFontSize": "50%",
-        "rangeMaps": [
-          {
-            "from": "null",
-            "text": "N/A",
-            "to": "null"
-          }
-        ],
-        "sparkline": {
-          "fillColor": "rgba(31, 118, 189, 0.18)",
-          "full": false,
-          "lineColor": "rgb(31, 120, 193)",
-          "show": false,
-          "ymax": null,
-          "ymin": null
-        },
-        "tableColumn": "",
-        "targets": [
-          {
-            "application": {
-              "filter": "General"
-            },
-            "functions": [],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "Number of processes"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "A",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          }
-        ],
-        "thresholds": "",
-        "timeFrom": null,
-        "timeShift": null,
-        "title": "PROCESS",
-        "type": "singlestat",
-        "valueFontSize": "80%",
-        "valueMaps": [
-          {
-            "op": "=",
-            "text": "N/A",
-            "value": "null"
-          }
-        ],
-        "valueName": "avg"
-      },
-      {
-        "datasource": null,
-        "fieldConfig": {
-          "defaults": {
-            "color": {
-              "mode": "thresholds"
-            },
-            "custom": {},
-            "displayName": "",
-            "mappings": [],
-            "max": 100,
-            "min": 0,
-            "thresholds": {
-              "mode": "absolute",
-              "steps": [
-                {
-                  "color": "green",
-                  "value": null
-                },
-                {
-                  "color": "red",
-                  "value": 80
-                }
-              ]
-            },
-            "unit": "percent"
-          },
-          "overrides": []
-        },
-        "gridPos": {
-          "h": 5,
-          "w": 11,
-          "x": 0,
-          "y": 16
-        },
-        "id": 7,
-        "options": {
-          "displayMode": "basic",
-          "orientation": "horizontal",
-          "reduceOptions": {
-            "calcs": [
-              "lastNotNull"
-            ],
-            "fields": "",
-            "values": false
-          },
-          "showUnfilled": true
-        },
-        "pluginVersion": "7.1.3",
-        "targets": [
-          {
-            "application": {
-              "filter": "Filesystem /"
-            },
-            "functions": [],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "/: Space utilization"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "A",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          }
-        ],
-        "timeFrom": null,
-        "timeShift": null,
-        "title": "STOCKAGE",
-        "type": "bargauge"
-      },
-      {
-        "aliasColors": {},
-        "bars": false,
-        "dashLength": 10,
-        "dashes": false,
-        "datasource": null,
-        "fieldConfig": {
-          "defaults": {
-            "custom": {},
-            "links": []
-          },
-          "overrides": []
-        },
-        "fill": 2,
-        "fillGradient": 6,
-        "gridPos": {
-          "h": 5,
-          "w": 9,
-          "x": 11,
-          "y": 16
-        },
-        "hiddenSeries": false,
-        "id": 8,
-        "legend": {
-          "avg": false,
-          "current": false,
-          "max": false,
-          "min": false,
-          "show": false,
-          "total": false,
-          "values": false
-        },
-        "lines": true,
-        "linewidth": 2,
-        "nullPointMode": "null",
-        "percentage": false,
-        "pluginVersion": "7.1.3",
-        "pointradius": 2,
-        "points": false,
-        "renderer": "flot",
-        "seriesOverrides": [],
-        "spaceLength": 10,
-        "stack": false,
-        "steppedLine": false,
-        "targets": [
-          {
-            "application": {
-              "filter": "Disk sda"
-            },
-            "functions": [],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "sda: Disk utilization"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "A",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          }
-        ],
-        "thresholds": [],
-        "timeFrom": null,
-        "timeRegions": [],
-        "timeShift": null,
-        "title": "HDD",
-        "tooltip": {
-          "shared": true,
-          "sort": 0,
-          "value_type": "individual"
-        },
-        "type": "graph",
-        "xaxis": {
-          "buckets": null,
-          "mode": "time",
-          "name": null,
-          "show": true,
-          "values": []
-        },
-        "yaxes": [
-          {
-            "format": "percent",
-            "label": null,
-            "logBase": 1,
-            "max": "100",
-            "min": "0",
-            "show": true
-          },
-          {
-            "format": "short",
-            "label": null,
-            "logBase": 1,
-            "max": null,
-            "min": null,
-            "show": true
-          }
-        ],
-        "yaxis": {
-          "align": false,
-          "alignLevel": null
-        }
-      },
-      {
-        "cacheTimeout": null,
-        "colorBackground": false,
-        "colorValue": true,
-        "colors": [
-          "#299c46",
-          "rgba(237, 129, 40, 0.89)",
-          "#d44a3a"
-        ],
-        "datasource": null,
-        "fieldConfig": {
-          "defaults": {
-            "custom": {}
-          },
-          "overrides": []
-        },
-        "format": "bytes",
-        "gauge": {
-          "maxValue": 100,
-          "minValue": 0,
-          "show": false,
-          "thresholdLabels": false,
-          "thresholdMarkers": true
-        },
-        "gridPos": {
-          "h": 5,
-          "w": 4,
-          "x": 20,
-          "y": 16
-        },
-        "id": 10,
-        "interval": null,
-        "links": [],
-        "mappingType": 1,
-        "mappingTypes": [
-          {
-            "name": "value to text",
-            "value": 1
-          },
-          {
-            "name": "range to text",
-            "value": 2
-          }
-        ],
-        "maxDataPoints": 100,
-        "nullPointMode": "connected",
-        "nullText": null,
-        "postfix": " / 1.8 TiB",
-        "postfixFontSize": "50%",
-        "prefix": "",
-        "prefixFontSize": "50%",
-        "rangeMaps": [
-          {
-            "from": "null",
-            "text": "N/A",
-            "to": "null"
-          }
-        ],
-        "sparkline": {
-          "fillColor": "rgba(31, 118, 189, 0.18)",
-          "full": false,
-          "lineColor": "rgb(31, 120, 193)",
-          "show": false,
-          "ymax": null,
-          "ymin": null
-        },
-        "tableColumn": "",
-        "targets": [
-          {
-            "application": {
-              "filter": "Filesystem /"
-            },
-            "functions": [],
-            "group": {
-              "filter": "VPS"
-            },
-            "host": {
-              "filter": "VPS - ORION"
-            },
-            "item": {
-              "filter": "/: Used space"
-            },
-            "options": {
-              "showDisabledItems": false,
-              "skipEmptyValues": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": 0,
-            "refId": "A",
-            "resultFormat": "time_series",
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2,
-              "count": true,
-              "minSeverity": 3
-            }
-          }
-        ],
-        "thresholds": "1500000000000,1700000000000",
-        "timeFrom": null,
-        "timeShift": null,
-        "title": "USED SPACE",
-        "type": "singlestat",
-        "valueFontSize": "80%",
-        "valueMaps": [
-          {
-            "op": "=",
-            "text": "N/A",
-            "value": "null"
-          }
-        ],
-        "valueName": "current"
+        "type": "dashboard"
       }
-    ],
-    "refresh": "5s",
-    "schemaVersion": 26,
-    "style": "dark",
-    "tags": [],
-    "templating": {
-      "list": []
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 1,
+  "id": 6,
+  "iteration": 1632839336076,
+  "links": [],
+  "panels": [
+    {
+      "ackEventColor": "rgb(56, 219, 156)",
+      "ackField": true,
+      "ageField": true,
+      "customLastChangeFormat": false,
+      "datasource": null,
+      "descriptionAtNewLine": false,
+      "descriptionField": true,
+      "fontSize": "100%",
+      "gridPos": {
+        "h": 11,
+        "w": 11,
+        "x": 0,
+        "y": 0
+      },
+      "highlightBackground": false,
+      "highlightNewEvents": true,
+      "highlightNewerThan": "1h",
+      "hostField": true,
+      "hostGroups": false,
+      "hostProxy": false,
+      "hostTechNameField": false,
+      "id": 17,
+      "lastChangeFormat": "",
+      "layout": "list",
+      "limit": null,
+      "markAckEvents": false,
+      "okEventColor": "rgb(56, 189, 113)",
+      "pageSize": 10,
+      "problemTimeline": true,
+      "resizedColumns": [],
+      "schemaVersion": 8,
+      "severityField": true,
+      "showTags": false,
+      "sortProblems": "lastchange",
+      "statusField": true,
+      "statusIcon": true,
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [],
+          "group": {
+            "filter": "$GROUP"
+          },
+          "host": {
+            "filter": "$SERVER"
+          },
+          "item": {
+            "filter": ""
+          },
+          "itemTag": {
+            "filter": ""
+          },
+          "options": {
+            "acknowledged": 2,
+            "disableDataAlignment": false,
+            "hostProxy": false,
+            "hostsInMaintenance": false,
+            "limit": 1001,
+            "minSeverity": 0,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "sortProblems": "default",
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "5",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "showProblems": "problems",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "title": "Zabbix alerts",
+      "triggerSeverity": [
+        {
+          "$$hashKey": "object:95",
+          "color": "rgb(108, 108, 108)",
+          "priority": 0,
+          "severity": "Not classified",
+          "show": true
+        },
+        {
+          "$$hashKey": "object:96",
+          "color": "rgb(120, 158, 183)",
+          "priority": 1,
+          "severity": "Information",
+          "show": true
+        },
+        {
+          "$$hashKey": "object:97",
+          "color": "rgb(175, 180, 36)",
+          "priority": 2,
+          "severity": "Warning",
+          "show": true
+        },
+        {
+          "$$hashKey": "object:98",
+          "color": "rgb(255, 137, 30)",
+          "priority": 3,
+          "severity": "Average",
+          "show": true
+        },
+        {
+          "$$hashKey": "object:99",
+          "color": "rgb(255, 101, 72)",
+          "priority": 4,
+          "severity": "High",
+          "show": true
+        },
+        {
+          "$$hashKey": "object:100",
+          "color": "rgb(215, 0, 0)",
+          "priority": 5,
+          "severity": "Disaster",
+          "show": true
+        }
+      ],
+      "type": "alexanderzobnin-zabbix-triggers-panel"
     },
-    "time": {
-      "from": "now-6h",
-      "to": "now"
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              },
+              {
+                "color": "green",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 11,
+        "w": 13,
+        "x": 11,
+        "y": 0
+      },
+      "id": 18,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "name"
+      },
+      "pluginVersion": "8.1.5",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [
+            {
+              "$$hashKey": "object:64",
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAliasByRegex",
+                "params": [
+                  {
+                    "name": "aliasByRegex",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "(?<=\\/)(.*?)(?=:)"
+              ],
+              "text": "setAliasByRegex((?<=\\/)(.*?)(?=:))"
+            }
+          ],
+          "group": {
+            "filter": "$GROUP"
+          },
+          "host": {
+            "filter": "$SERVER"
+          },
+          "item": {
+            "filter": "/Running/"
+          },
+          "itemTag": {
+            "filter": "/Application: Docker: Container */"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "title": "Containers Docker",
+      "type": "stat"
     },
-    "timepicker": {
-      "refresh_intervals": [
-        "5s",
-        "10s",
-        "30s",
-        "1m",
-        "5m",
-        "15m",
-        "30m",
-        "1h",
-        "2h",
-        "1d"
-      ]
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "links": []
+        },
+        "overrides": []
+      },
+      "fill": 2,
+      "fillGradient": 6,
+      "gridPos": {
+        "h": 10,
+        "w": 11,
+        "x": 0,
+        "y": 11
+      },
+      "hiddenSeries": false,
+      "id": 2,
+      "legend": {
+        "alignAsTable": false,
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "rightSide": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 2,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "8.1.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "application": {
+            "filter": "Interface eno1"
+          },
+          "functions": [
+            {
+              "def": {
+                "name": "scale",
+                "category": "Transform",
+                "params": [
+                  {
+                    "name": "factor",
+                    "type": "float",
+                    "options": [
+                      100,
+                      0.01,
+                      10,
+                      -1
+                    ]
+                  }
+                ],
+                "defaultParams": [
+                  100
+                ]
+              },
+              "params": [
+                "-1"
+              ],
+              "text": "scale(-1)",
+              "added": false,
+              "$$hashKey": "object:469"
+            },
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "Download"
+              ],
+              "text": "setAlias(Download)",
+              "$$hashKey": "object:399"
+            }
+          ],
+          "group": {
+            "filter": "$GROUP"
+          },
+          "host": {
+            "filter": "$SERVER"
+          },
+          "item": {
+            "filter": "/Bits received/"
+          },
+          "itemTag": {
+            "filter": "/Application: Interface*/"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": "Interface eno1"
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "Upload"
+              ],
+              "text": "setAlias(Upload)",
+              "$$hashKey": "object:420"
+            }
+          ],
+          "group": {
+            "filter": "$GROUP"
+          },
+          "host": {
+            "filter": "$SERVER"
+          },
+          "item": {
+            "filter": "/Bits sent/"
+          },
+          "itemTag": {
+            "filter": "/Application: Interface*/"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "NETWORK",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:9320",
+          "decimals": null,
+          "format": "bps",
+          "label": "",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "$$hashKey": "object:9321",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
     },
-    "timezone": "",
-    "title": "ORION",
-    "uid": "NGYEtA8Wz",
-    "version": 11
-  }
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "links": []
+        },
+        "overrides": []
+      },
+      "fill": 2,
+      "fillGradient": 6,
+      "gridPos": {
+        "h": 5,
+        "w": 9,
+        "x": 11,
+        "y": 11
+      },
+      "hiddenSeries": false,
+      "id": 4,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": false,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 2,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "8.1.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "application": {
+            "filter": "Memory"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$GROUP"
+          },
+          "host": {
+            "filter": "$SERVER"
+          },
+          "item": {
+            "filter": "Memory utilization"
+          },
+          "itemTag": {
+            "filter": "Application: Memory"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "RAM",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:9560",
+          "format": "percent",
+          "label": null,
+          "logBase": 1,
+          "max": "100",
+          "min": "0",
+          "show": true
+        },
+        {
+          "$$hashKey": "object:9561",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "rgba(237, 129, 40, 0.89)",
+        "#299c46"
+      ],
+      "datasource": null,
+      "format": "bytes",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 4,
+        "x": 20,
+        "y": 11
+      },
+      "id": 14,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "$$hashKey": "object:9753",
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "$$hashKey": "object:9754",
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false,
+        "ymax": null,
+        "ymin": null
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "application": {
+            "filter": "Memory"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$GROUP"
+          },
+          "host": {
+            "filter": "$SERVER"
+          },
+          "item": {
+            "filter": "Available memory"
+          },
+          "itemTag": {
+            "filter": "Application: Memory"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": "200000000,4000000000",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "FREE RAM",
+      "type": "grafana-singlestat-panel",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "$$hashKey": "object:9756",
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "links": []
+        },
+        "overrides": []
+      },
+      "fill": 2,
+      "fillGradient": 6,
+      "gridPos": {
+        "h": 5,
+        "w": 9,
+        "x": 11,
+        "y": 16
+      },
+      "hiddenSeries": false,
+      "id": 5,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": false,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 2,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "8.1.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "application": {
+            "filter": "CPU"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$GROUP"
+          },
+          "host": {
+            "filter": "$SERVER"
+          },
+          "item": {
+            "filter": "CPU utilization"
+          },
+          "itemTag": {
+            "filter": "Application: CPU"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "CPU",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:9898",
+          "format": "percent",
+          "label": null,
+          "logBase": 1,
+          "max": "100",
+          "min": "0",
+          "show": true
+        },
+        {
+          "$$hashKey": "object:9899",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": false,
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "datasource": null,
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 4,
+        "x": 20,
+        "y": 16
+      },
+      "id": 15,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "$$hashKey": "object:10079",
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "$$hashKey": "object:10080",
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false,
+        "ymax": null,
+        "ymin": null
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "application": {
+            "filter": "General"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$GROUP"
+          },
+          "host": {
+            "filter": "$SERVER"
+          },
+          "item": {
+            "filter": "Number of processes"
+          },
+          "itemTag": {
+            "filter": "Application: General"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": "",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "PROCESS",
+      "type": "grafana-singlestat-panel",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "$$hashKey": "object:10082",
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "avg"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "displayName": "",
+          "mappings": [],
+          "max": 100,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 11,
+        "x": 0,
+        "y": 21
+      },
+      "id": 7,
+      "options": {
+        "displayMode": "basic",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true,
+        "text": {}
+      },
+      "pluginVersion": "8.1.5",
+      "targets": [
+        {
+          "application": {
+            "filter": "Filesystem /"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$GROUP"
+          },
+          "host": {
+            "filter": "$SERVER"
+          },
+          "item": {
+            "filter": "/: Space utilization"
+          },
+          "itemTag": {
+            "filter": "Application: Filesystem /"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "STOCKAGE",
+      "type": "bargauge"
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "links": []
+        },
+        "overrides": []
+      },
+      "fill": 2,
+      "fillGradient": 6,
+      "gridPos": {
+        "h": 5,
+        "w": 9,
+        "x": 11,
+        "y": 21
+      },
+      "hiddenSeries": false,
+      "id": 8,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": false,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 2,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "8.1.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "application": {
+            "filter": "Disk sda"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$GROUP"
+          },
+          "host": {
+            "filter": "$SERVER"
+          },
+          "item": {
+            "filter": "/Disk utilization/"
+          },
+          "itemTag": {
+            "filter": "/Application: Disk*/"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "HDD",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:10236",
+          "format": "percent",
+          "label": null,
+          "logBase": 1,
+          "max": "100",
+          "min": "0",
+          "show": true
+        },
+        {
+          "$$hashKey": "object:10237",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": true,
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "datasource": null,
+      "format": "bytes",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 4,
+        "x": 20,
+        "y": 21
+      },
+      "id": 10,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "$$hashKey": "object:549",
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "$$hashKey": "object:550",
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false,
+        "ymax": null,
+        "ymin": null
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "application": {
+            "filter": "Filesystem /"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$GROUP"
+          },
+          "host": {
+            "filter": "$SERVER"
+          },
+          "item": {
+            "filter": "/: Used space"
+          },
+          "itemTag": {
+            "filter": "Application: Filesystem /"
+          },
+          "options": {
+            "disableDataAlignment": false,
+            "showDisabledItems": false,
+            "skipEmptyValues": false,
+            "useZabbixValueMapping": false
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "queryType": "0",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": "1500000000000,1700000000000",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "USED SPACE",
+      "type": "grafana-singlestat-panel",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "$$hashKey": "object:552",
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 30,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "selected": true,
+          "text": "INTREDYS",
+          "value": "INTREDYS"
+        },
+        "datasource": null,
+        "definition": "Zabbix - group",
+        "description": null,
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "GROUP",
+        "options": [],
+        "query": {
+          "application": "",
+          "group": "/.*/",
+          "host": "",
+          "item": "",
+          "itemTag": "",
+          "queryType": "group"
+        },
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "type": "query"
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "MONIRORING-SERVER",
+          "value": "MONIRORING-SERVER"
+        },
+        "datasource": null,
+        "definition": "Zabbix - host",
+        "description": null,
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "SERVER",
+        "options": [],
+        "query": {
+          "application": "",
+          "group": "$GROUP",
+          "host": "/.*/",
+          "item": "",
+          "itemTag": "",
+          "queryType": "host"
+        },
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "type": "query"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ]
+  },
+  "timezone": "",
+  "title": "SERVEUR",
+  "uid": "NGYEtA8Wz4",
+  "version": 14
+}
