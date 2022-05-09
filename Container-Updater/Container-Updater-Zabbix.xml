@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.2</version>
+    <date>2021-06-21T12:03:24Z</date>
+    <groups>
+        <group>
+            <name>Templates/Applications</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template App Updater</template>
+            <name>Template App Updater</name>
+            <description>Created by Mickael ASSELINE (PAPAMICA) 
+https://mickaelasseline.com
+https://github.com/PAPAMICA/</description>
+            <groups>
+                <group>
+                    <name>Templates/Applications</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Updater</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Number of paquets to update</name>
+                    <type>TRAP</type>
+                    <key>update.paquets</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>Updater</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Number of containers to update</name>
+                    <type>TRAP</type>
+                    <key>update.container_to_update_nb</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>Updater</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Containers to update list</name>
+                    <type>TRAP</type>
+                    <key>update.container_to_update_names</key>
+                    <delay>0</delay>
+                    <trends>0</trends>
+                    <value_type>CHAR</value_type>
+                    <applications>
+                        <application>
+                            <name>Updater</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Number of containers updated</name>
+                    <type>TRAP</type>
+                    <key>update.container_updated_nb</key>
+                    <delay>0</delay>
+                    <applications>
+                        <application>
+                            <name>Updater</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Containers updated list</name>
+                    <type>TRAP</type>
+                    <key>update.container_updated_names</key>
+                    <delay>0</delay>
+                    <trends>0</trends>
+                    <value_type>CHAR</value_type>
+                    <applications>
+                        <application>
+                            <name>Updater</name>
+                        </application>
+                    </applications>
+                </item>
+            </items>
+        </template>
+    </templates>
+</zabbix_export>
